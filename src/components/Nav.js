@@ -2,21 +2,24 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 function Nav () {
+  let style = {
+    textDecoration: 'none'
+  }
   return (
-    <div>
-      <ul>
+    <div className="Nav">
+      <ul style={{ textDecoration: 'none'}}>
         <li>
-          <NavLink  activeClassName="active" to="/">
+          <NavLink style={ style } activeClassName="active" to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink  activeClassName="active" to="/champions">
+          <NavLink style={ style }  activeClassName="active" to="/champions">
             All Champions
           </NavLink>
         </li>
         <li>
-          <NavLink  activeClassName="active" to="/favorites">
+          <NavLink style={ style }  activeClassName="active" to="/champions/favorites">
             Favorite Champions
           </NavLink>
         </li>
