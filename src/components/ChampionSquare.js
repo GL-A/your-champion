@@ -6,7 +6,7 @@ class ChampionSquare extends React.Component {
     super( props );
 
     this.state = {
-      heartStyle: { color: 'white', cursor: 'pointer' }
+      heartStyle: { color: 'white' }
     }
     this.handleHeartClick = this.handleHeartClick.bind( this );
   }
@@ -31,7 +31,7 @@ class ChampionSquare extends React.Component {
         return champion.id !== this.props.id
       })
       localStorage.setItem( 'favoriteChampions', JSON.stringify( champions ));
-      this.setState({ heartStyle: { color: 'white' }});
+      this.setState({ heartStyle: { color: 'white'}});
     }
     else {
       localStorage.setItem( 'favoriteChampions', JSON.stringify([champion]));

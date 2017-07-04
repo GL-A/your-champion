@@ -36,7 +36,7 @@ function Champion ( props ) {
       </div>
       <ul>
         { props.spells.map( ( spell, idx ) => {
-          return <li  style={{ border: 'solid 1px #551A8B', margin: '10px'}} key={ idx }>
+          return <li className="details-spells-li"  key={ idx }>
             <div className="details-spells-container">
 
               <div className="details-spells-img">

@@ -36,12 +36,13 @@ class ChampionList extends Component {
         <div className="champion-filter">
           <h1 style={{ color: '#F8F8EF'}}>Champions </h1>
           <input
-            style={{ margin: '0 10px', height: '80%'}}
+            className="champion-filter-input"
             value={ this.state.searchTerm }
             type="text"
             onChange={ this.filteredChampions }>
           </input>
           <select
+            className="champion-filter-select"
             style={{ margin: '0 10px', height: '80%'}}
             onChange={ this.handleRoleChange }>
             <option value="ALL">ALL</option>
